@@ -1,0 +1,9 @@
+Members: 
+Ashley John Baguio
+Marc Nichol Riego
+Kurt Angelo Fabello 
+BSCS 2B
+
+Concept: Hospital Management System
+Brief Description: A simple application to manage patient records,
+or doctor schedules, or patient appointments.

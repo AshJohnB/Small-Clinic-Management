@@ -1,0 +1,24 @@
+<?php
+/**
+ * patients/delete_visit.php
+ * Deletes a visit (AJAX).
+ */
+session_start();
+include '../config/connection.php';
+
+$visit_id = isset($_POST['visit_id']) ? (int) $_POST['visit_id'] : 0;
+
+$sql  = "DELETE FROM visits WHERE id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param('i', $visit_id);
+
+if ($stmt->execute()) {
+    if ($stmt->affected_rows > 0) {
+        echo json_encode(['status' => 'success', 'message' => 'Visit deleted successfully.']);
+    } else {
+        echo json_encode(['status' => 'error', 'message' => 'Visit not found.']);
+    }
+} else {
+    echo json_encode(['status' => 'error', 'message' => 'Error deleting visit: ' . $stmt->error]);
+}
+$stmt->close();

@@ -1,0 +1,78 @@
+body {
+    background-color: #f4f6f9;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-hover tbody tr {
+    transition: background-color 0.3s ease;
+}
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn {
+    border-radius: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translateY(-10px);
+}
+.modal.show .modal-dialog {
+    transform: translateY(0);
+}
+
+
+/* assets/css/styles.css */
+
+/* A nice gradient background for login/register pages */
+.auth-background {
+    min-height: 100vh; /* full viewport height */
+    background: linear-gradient(135deg, #74ABE2, #5563DE);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  
+  /* The login/register card with rounded corners, a shadow, etc. */
+  .auth-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* The card header with a smoother top radius */
+  .auth-card .card-header {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  /* Round the submit buttons a bit more */
+  .btn-block {
+    width: 100%;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+  
+  /* A bit more spacing on smaller screens */
+  @media (max-width: 768px) {
+    .auth-background {
+      padding: 1rem;
+    }
+  }
+  
