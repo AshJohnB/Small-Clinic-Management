@@ -4,7 +4,9 @@
 
 
 **Developed by** Ashley John Baguio, Marc Nichol Riego, and Kurt Angelo Fabello
-**Submitted to Prof. Eloihim Baculpo**  
+
+
+>**Submitted to Prof. Eloihim Baculpo**  
 > **Date: 12/25/2024**  
 
 
